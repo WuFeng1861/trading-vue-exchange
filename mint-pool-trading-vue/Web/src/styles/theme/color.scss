@@ -1,0 +1,52 @@
+:root {
+  --color-dashboard-bg-grey: #272727;
+  --color-dashboard-bg-main: #212121;
+  --color-dashboard-bg-active: #404040;
+  --color-dashboard-white: #ffffff;
+  --color-dashboard-black: #000000;
+  --color-dashboard-green: #ABF600;
+  --color-dashboard-green-op: #ABF60047;
+  --color-dashboard-green-op2: #608A00;
+  --color-dashboard-border: #A2A2A2;
+  --color-dashboard-border-grey: #A2A2A236;
+  --color-dashboard-border-black: #070707;
+  --color-dashboard-wave: #4973ff;
+}
+
+:root {
+  --color-mobile-grey: #2E2E2E; // 底部导航栏背景色
+  --color-mobile-grey-2: #585858; // 底部导航栏导航未选中颜色
+  --color-mobile-grey-3: #BDBDBD; // 灰色字体
+  --color-mobile-grey-4: #353535; // 灰色背景
+  --color-mobile-grey-4-2: #313131; // 灰色背景
+  --color-mobile-grey-4-3: #3D3D3D; // 灰色背景
+  --wallet-mobile-main-bg: #161616; // 钱包页面主背景
+  --wallet-mobile-grey-bg: #303030; // 钱包页面主背景
+  --wallet-mobile-grey-font: #A0A0A0; // 钱包页面灰色字体
+  --wallet-mobile-black-font: #333; // 钱包页面黑色字体
+  --wallet-mobile-grey-line: #c9c9c9; // 钱包页面灰色分割线
+
+  --exchange-buy-color: #25A750; // 交易页面买入颜色
+  --exchange-sell-color: #CA3F64; // 交易页面卖出颜色
+  --exchange-main-bg: #121212; // 交易页面背景
+  --exchange-black: #000000; // 交易页面黑色间隙
+  --exchange-grey: #1A1A1A; // 交易页面灰色
+  --exchange-grey-highlight: #353535; // 交易页面高亮灰色
+  --exchange-active-button: #228A44; // 交易页面激活按钮
+  --exchange-input-bg: #202020; // 交易页面输入框背景
+  --exchange-input-border: #4A4A4A; // 交易页面输入框边框
+}
+
+[data-theme="2"] {
+  --color-dashboard-bg-grey: #272727;
+  --color-dashboard-bg-main: #212121;
+  --color-dashboard-bg-active: #404040;
+  --color-dashboard-white: #ffffff;
+  --color-dashboard-black: #000000;
+  --color-dashboard-green: #F0B90B;
+  --color-dashboard-green-op: #b98900;
+  --color-dashboard-green-op2: #e5af00;
+  --color-dashboard-border: #A2A2A2;
+  --color-dashboard-border-black: #070707;
+  --color-dashboard-wave: #4973ff;
+}

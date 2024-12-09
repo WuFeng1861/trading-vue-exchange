@@ -1,0 +1,201 @@
+@import "layout.scss";
+@import "theme/index.scss";
+@import "my-css.scss";
+/*
+  1. 使用更直观的盒模型（box-sizing）
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. 取消默认margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  3. 允许通过百分比设置应用的高度
+*/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+  4. 更合适的行高
+  5. 优化text的渲染平滑度
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. 更合理的多媒体默认展示方式
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. 避免奇怪的默认文字风格
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+
+/*
+  8. 避免换行布局混乱
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+  9. 叠层处理
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+* {
+  font-family: 'sans-serif',"Microsoft YaHei", "PingFang SC";
+}
+
+a{
+  text-decoration:none;
+}
+
+*:focus-visible{
+  outline: 0;
+}
+
+.fix-right-bottom {
+  position: fixed;
+  bottom: 5vmin;
+  right: 5vmin;
+}
+
+:deep(.el-form-item) {
+  padding: 0 10px 15px;
+}
+
+// 不显示input的右侧加减号
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+//:deep(.el-dialog) {
+//  max-width: 80%;
+//  //width: 500px;
+//  border-radius: 5px;
+//}
+
+::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
+}
+
+//分割线颜色
+$split-line-color: #E6E6E6;
+//背景颜色灰
+$bg-color-gray: #f5f5f5;
+
+$blue-1:#2282FE;
+$blue-2:#0067DE;
+$blue-3:#004DBE;
+$blue-4:#00359F;
+$blue-5:#002082;
+$menu-blue: #1C8ADB;
+$main-bg: #f3f3f3;
+
+
+/**
+ * 禁用
+ */
+.disabled {
+  cursor: not-allowed !important;
+  color: $bg-color-gray;
+  &:hover {
+    color: $bg-color-gray !important;
+  }
+}
+.mobileOnly {
+  display: none !important;
+}
+.shadowNormal {
+  box-shadow: 0 5px 0 0 var(--color-dashboard-black);
+}
+.border-grey {
+  border:1px solid var(--color-dashboard-border);
+}
+.border-black {
+  border:1px solid var(--color-dashboard-border-black);
+}
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  border-radius: 7px;
+  border: 1px solid var(--color-dashboard-bg-active);
+  background-color: var(--color-dashboard-bg-active);
+}
+.fill {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.el-divider--horizontal {
+  margin: 0;
+}
+.el-form-item {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --el-menu-base-level-padding: 10px !important;
+    --el-menu-level-padding: 10px !important;
+  }
+  .el-select {
+    max-width: 100%;
+    width: 100%;
+  }
+  .el-input {
+    max-width: 100%;
+    width: 100%;
+  }
+  .el-form-item__label {
+    width: auto !important;
+  }
+  .el-form-item__content {
+    gap: 10px;
+  }
+  .el-button+.el-button {
+    margin-left: 0;
+    gap: 10px;
+  }
+  .el-form--inline .el-form-item {
+    margin-right: 0;
+    width: 100%;
+  }
+  //.el-dialog {
+  //  max-width: 80% !important;
+  //}
+  .pcOnly {
+    display: none !important;
+  }
+  .mobileOnly {
+    display: flex !important;
+  }
+}

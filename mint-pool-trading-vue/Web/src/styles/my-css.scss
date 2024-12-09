@@ -1,0 +1,79 @@
+.pc-gap-bt-10 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.copyLink {
+  margin-left: 20px !important;
+  background-color: var(--color-dashboard-green);
+  color: var(--color-dashboard-black);
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 20px;
+  transition: all 0.2s ease-in-out;
+  border: 0;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 0 0 var(--color-dashboard-black);
+  }
+}
+
+.copyLink2 {
+  margin-left: 20px;
+  background-color: var(--color-dashboard-white);
+  color: var(--color-dashboard-black);
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 20px;
+  transition: all 0.2s ease-in-out;
+  border: 0;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 0 0 var(--color-dashboard-black);
+  }
+}
+
+.copyLink3 {
+  margin-left: 20px;
+  background-color: transparent;
+  color: var(--color-dashboard-green);
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 20px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid var(--color-dashboard-green);
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 5px 0 0 var(--color-dashboard-black);
+  }
+}
+
+.hoverBorderLight {
+  &:hover {
+    cursor: pointer;
+    border:1px solid var(--color-dashboard-green);
+  }
+}
+
+// div中的img 要求背景铺满div作为背景图
+.bgPng {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+@media screen and (max-width: 768px) {
+  .pc-gap-bt-10 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}

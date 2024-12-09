@@ -1,0 +1,24 @@
+import {EthersHelper} from "../utils/ethersHelper.js";
+
+export const config = {
+  HTTP_PORT: 53000,
+  EMAIL_API: "http://124.222.220.135:52100",
+  USER_API: "http://124.222.220.135:52001",
+  // 每次获取代币交易的最大高度间隔
+  MAX_HEIGHT_INTERVAL: 100,
+  // 获取代币交易的间隔时间 3min
+  GET_TX_INTERVAL: 3,
+  // 代币充值和提币的地址
+  MERC_RECHARGE_ADDRESS: "0x21Cdc327F87d996cE6500B70C66B53921eDf8Ec8",
+  MERC_WITHDRAW_ADDRESS: "0x930F21Dc41F666c3F9ef94a7e394Ab39CabB3F7F",
+  // 提币手续费计算地址
+  WITHDRAW_FEE_CALC_ADDRESS: "0x103134f2587D9d1d5946B16a32848F56A5BE2C72",
+  // bsc 测试网使用的地址
+  // CHAIN_URL_LIST: EthersHelper.BinanceTestUrl,
+  // MERC_CONTRACT_ADDRESS: "0x5495df4054086583F373c05bfd5ffa192a726D3b",
+  // bsc 主网使用的地址
+  CHAIN_URL_LIST: EthersHelper.BinanceUrl,
+  MERC_CONTRACT_ADDRESS: "0xE2CF16eDd5b705DD89DAde70CdF42189fb8A353C",
+  USDT_CONTRACT_ADDRESS: "0x55d398326f99059fF775485246999027B3197955",
+
+};

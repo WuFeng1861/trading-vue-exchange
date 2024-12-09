@@ -1,0 +1,8 @@
+export const config = {
+  HTTP_PORT: 54000,
+  WEBSOCKET_PORT: 55000,
+  EMAIL_API: "http://124.222.220.135:52100",
+  USER_API: "http://124.222.220.135:52001",
+  // USER_API: "http://127.0.0.1:52001",
+  DEFAULT_EXCHANGE_FEE: 0.005, // 千分之5
+};
